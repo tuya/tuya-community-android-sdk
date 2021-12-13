@@ -1,0 +1,27 @@
+{
+  "hybrid_plugins": [
+    "com.tuya.smart.jsbridge.jscomponent.origin.UserJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.UIKitJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.AppJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.NavJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.NetJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.KVJSComponent",
+    "com.tuya.smart.logupload.LogJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.ImageJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.TokenJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.ImagePickerJSComponent",
+    "com.tuya.smart.deviceconfig.plugin.TuyaConfigDeviceJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.LifecycleJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.ShareJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.PopupJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.NavigatorJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.ToastJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.AppInfoJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.ClipboardJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.origin.PhoneJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.MediaPreviewJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.UserJSComponent",
+    "com.tuya.smart.jsbridge.apm.plugins.APMJSComponent",
+    "com.tuya.smart.jsbridge.jscomponent.plugin.PageJSComponent"
+  ]
+}

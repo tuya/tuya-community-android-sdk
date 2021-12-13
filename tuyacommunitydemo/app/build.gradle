@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file('xxx.jks')
+            storePassword 'xxx'
+            keyAlias 'xxx'
+            keyPassword 'xxx'
+
+        }
+        debug {
+            storeFile file('xxx.jks')
+            storePassword 'xxx'
+            keyAlias 'xxx'
+            keyPassword 'xxx'
+        }
+    }
+
+
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    packagingOptions {
+        pickFirst 'lib/*/libc++_shared.so'
+        pickFirst 'lib/*/libgnustl_shared.so'
+        pickFirst 'lib/*/libjnimain.so'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.liuqianqian.usetest"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+        multiDexEnabled true
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        manifestPlaceholders = [TUYA_SMART_APPKEY: "${properties.getProperty("appkey")}", TUYA_SMART_SECRET: "${properties.getProperty("appsecret")}"]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.kyleduo.switchbutton:library:1.4.2'
+
+
+    //***** community sdk required ****//
+    implementation 'com.tuya.smart:tuyacommunitysdk:1.0.6'
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.12'
+
+    //**** web容器接入 *****//
+    implementation 'com.facebook.fresco:fresco:2.2.0'
+    implementation 'com.tuya.smart:tuyacommunity-webcontainer:v2.10.0-RC.0.0.0.6-SNAPSHOT'
+    implementation 'com.tuya.smart:tuyasmart-base:3.28.5'
+    implementation 'com.tuya.smart:tuyasmart-theme-hub:3.28.0-rc.3'
+    implementation 'com.mapzen:on-the-road:0.8.1'
+    implementation 'com.tuya.smart:tuyasmart-uispecs:3.28.5-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-base-utils:3.27.0-rc.3'
+    implementation 'com.tuya.smart:tuyasmart-framework:3.24.5-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-appshell:3.21.0-rc.3'
+    implementation 'com.tuya.smart:tuyasmart-xplatformmanager:3.20.0r149-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-tuyatangramapi:3.18.0r143-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-tuyatangram:3.26.5'
+    implementation 'com.tuya.smart:tuyasmart-ipcsdk:3.27.5'
+}

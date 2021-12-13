@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/open_door"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_item_control_btn"
+            android:drawableTop="@drawable/visual_talk_open_door"
+            android:drawablePadding="@dimen/mg_5"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="开门"
+            android:textColor="@color/camera_panel_control_color"
+            android:textSize="@dimen/ts_13" />
+
+        <TextView
+            android:id="@+id/speak_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_item_control_btn"
+            android:drawableTop="@drawable/camera_icon_mic_selector"
+            android:drawablePadding="@dimen/mg_5"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="speak"
+            android:textColor="@color/camera_panel_control_color"
+            android:textSize="@dimen/ts_13" />
+
+        <TextView
+            android:id="@+id/reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@drawable/camera_item_control_btn"
+            android:drawableTop="@drawable/visual_talk_camera_speaker_btn_cancel"
+            android:drawablePadding="@dimen/mg_5"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="reject"
+            android:textColor="@color/camera_panel_control_color"
+            android:textSize="@dimen/ts_13" />
+
+        <TextView
+            android:id="@+id/handup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_item_control_btn"
+            android:drawableTop="@drawable/visual_talk_camera_speaker_btn_cancel"
+            android:drawablePadding="@dimen/mg_5"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="handup"
+            android:textColor="@color/camera_panel_control_color"
+            android:textSize="@dimen/ts_13" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

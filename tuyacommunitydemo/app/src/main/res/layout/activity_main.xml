@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_top_view" />
+
+        <Button
+            android:id="@+id/btn_home_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_house_list"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_change_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_house"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_homeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="current house id" />
+
+            <Button
+                android:id="@+id/btn_get_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/get_house_info"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="community id:  "
+                android:textSize="@dimen/ts_16" />
+
+            <EditText
+                android:id="@+id/et_projectId"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="room id:  "
+                android:textSize="@dimen/ts_16" />
+
+            <EditText
+                android:id="@+id/et_spaceTreeId"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_home_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_house_detail"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_devId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="enter devId:" />
+
+            <Button
+                android:id="@+id/btn_dev_oprate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Operate your device"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_visitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_16"
+            android:text="@string/visitor"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btn_smart_door"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smart_door"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_visual_speak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visual_speak"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_login_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_out"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

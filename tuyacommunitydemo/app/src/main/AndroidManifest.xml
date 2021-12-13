@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tuya.community.business.sdk.demo">
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".TuyaApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/community_sdk_app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        tools:replace="android:label"
+        android:theme="@style/AppTheme">
+        <activity android:name=".smartdoor.CommunityQRCodeActivity"></activity>
+        <activity android:name=".smartdoor.OpenDoorRecordActivity" />
+        <activity android:name=".smartdoor.SmartDoorListActivity" />
+        <activity android:name=".house.AddHouseActivity" />
+        <activity android:name=".house.VerifyInfoActivity" />
+        <activity android:name=".house.ChooseCommunityActivity" />
+        <activity android:name=".house.HouseListActivity" />
+        <activity android:name=".house.MemberListActivity" />
+        <activity android:name=".house.AddMemberActivity" />
+        <activity android:name=".visitor.VisitorActivity" />
+        <activity android:name=".visitor.VisitorRecordListActivity"/>
+        <activity android:name=".visitor.VisitorInfoDetailActivity"/>
+        <activity android:name=".visualspeak.VisualSpeakMainActivity" />
+        <activity android:name=".visualspeak.VisualSpeakVideoActivity" />
+
+        <meta-data
+            android:name="TUYA_SMART_APPKEY"
+            android:value="应用 Appkey" />
+        <meta-data
+            android:name="TUYA_SMART_SECRET"
+            android:value="应用密钥 AppSecret" />
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.activity.EditPasswordActivity" />
+        <activity android:name=".login.activity.GetVerificationCodeActivity" />
+        <activity android:name=".login.activity.InputVerificationCodeActivity" />
+        <activity android:name=".login.activity.LoginActivity" />
+    </application>
+
+</manifest>
