@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven{url 'http://central.maven.org/maven2/'}
+        maven {
+            url "https://maven-other.tuya.com/repository/maven-releases/"
+        }
+    }
+
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "https://maven-other.tuya.com/repository/maven-releases/"
+        }
+        maven{url 'http://central.maven.org/maven2/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
