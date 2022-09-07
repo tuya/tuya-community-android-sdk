@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tuya.community.android.smartdoor.bean.TuyaCommunitySmartDoorOpenRecordBean;
 import com.tuya.community.business.sdk.demo.R;
-import com.tuyasmart.stencil.utils.TimeUtil;
+import com.tuya.community.business.sdk.demo.utils.TimeUtil;
+
 
 import java.util.ArrayList;
 import java.util.List;

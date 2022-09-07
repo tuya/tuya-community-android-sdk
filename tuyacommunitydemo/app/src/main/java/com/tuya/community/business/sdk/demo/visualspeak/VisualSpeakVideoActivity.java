@@ -16,6 +16,7 @@ import com.tuya.community.android.visualspeak.enums.TYVisualSpeakCommunicationTy
 import com.tuya.community.business.sdk.demo.BaseActivity;
 import com.tuya.community.business.sdk.demo.R;
 import com.tuya.community.business.sdk.demo.utils.Constants;
+import com.tuya.community.business.sdk.demo.utils.MessageUtil;
 import com.tuya.community.sdk.android.TuyaCommunitySDK;
 import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
 import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
@@ -27,7 +28,6 @@ import com.tuya.smart.camera.middleware.p2p.ITuyaSmartCameraP2P;
 import com.tuya.smart.camera.middleware.widget.AbsVideoViewCallback;
 import com.tuya.smart.camera.middleware.widget.TuyaCameraView;
 import com.tuya.smart.camera.utils.AudioUtils;
-import com.tuyasmart.stencil.utils.MessageUtil;
 
 import java.nio.ByteBuffer;
 import java.util.HashMap;

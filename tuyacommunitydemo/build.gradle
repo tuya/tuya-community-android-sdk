@@ -1,12 +1,17 @@
 buildscript {
     repositories {
-        mavenLocal()
         google()
-        jcenter()
-        maven { url 'https://jitpack.io' }
-        maven{url 'http://central.maven.org/maven2/'}
+        mavenCentral()
+        mavenLocal()
         maven {
             url "https://maven-other.tuya.com/repository/maven-releases/"
+            mavenContent {
+                releasesOnly()
+            }
+        }
+        jcenter() //Warning:this repository is going to shut down soon
+        flatDir {
+            dirs 'libs'
         }
     }
 
@@ -18,14 +23,19 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenLocal()
         google()
-        jcenter()
-        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        mavenLocal()
         maven {
             url "https://maven-other.tuya.com/repository/maven-releases/"
+            mavenContent {
+                releasesOnly()
+            }
         }
-        maven{url 'http://central.maven.org/maven2/'}
+        jcenter() //Warning:this repository is going to shut down soon
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 

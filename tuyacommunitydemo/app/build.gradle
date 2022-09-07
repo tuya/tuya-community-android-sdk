@@ -4,14 +4,14 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('xxx.jks')
+            storeFile file('xxx')
             storePassword 'xxx'
             keyAlias 'xxx'
             keyPassword 'xxx'
 
         }
         debug {
-            storeFile file('xxx.jks')
+            storeFile file('xxx')
             storePassword 'xxx'
             keyAlias 'xxx'
             keyPassword 'xxx'
@@ -33,7 +33,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.liuqianqian.usetest"
+        applicationId ""
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -96,12 +96,7 @@ dependencies {
 
     //**** web容器接入 *****//
     implementation 'com.facebook.fresco:fresco:2.2.0'
-    implementation 'com.tuya.smart:tuyacommunity-webcontainer:v2.10.0-RC.0.0.0.6-SNAPSHOT'
-    implementation 'com.tuya.smart:tuyasmart-base:3.28.5'
-    implementation 'com.tuya.smart:tuyasmart-theme-hub:3.28.0-rc.3'
     implementation 'com.mapzen:on-the-road:0.8.1'
-    implementation 'com.tuya.smart:tuyasmart-uispecs:3.28.5-rc.1'
-    implementation 'com.tuya.smart:tuyasmart-base-utils:3.27.0-rc.3'
     implementation 'com.tuya.smart:tuyasmart-framework:3.24.5-rc.1'
     implementation 'com.tuya.smart:tuyasmart-appshell:3.21.0-rc.3'
     implementation 'com.tuya.smart:tuyasmart-xplatformmanager:3.20.0r149-rc.1'
