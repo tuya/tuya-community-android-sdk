@@ -41,7 +41,7 @@
     </style>
 
     <style name="SampleTheme" parent="android:Theme">
-        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+        <item name="numberPickerStyle">@style/NPWidget.NumberPicker</item>
     </style>
 <!--    <style name="NPWidget.Holo.NumberPicker" parent="NPWidget.NumberPicker">-->
 <!--        <item name="solidColor">@android:color/transparent</item>-->

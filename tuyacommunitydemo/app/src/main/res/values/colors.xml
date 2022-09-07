@@ -54,6 +54,12 @@
     <color name="black">#000000</color>
     <color name="gray_99">#999999</color>
 
+    <color name="ty_theme_color_b1_n3">#80000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue_30">#8b9bba</color>
+    <color name="black_10">#3e4043</color>
+    <color name="google_red">#d62d20</color>
+
     <!--WebContainer-->
     <!-- IPC -->
     <color name="default_bg">#f0f0f0</color>
