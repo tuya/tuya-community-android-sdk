@@ -27,12 +27,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * @Description:
- * @CreateDate: 2022/9/7 10:51
- * @Author: Snail
- * @Email: Snail.liu@tuya.com
- */
 public class CommonUtil {
 
     public static String formatDate(long mill, String format) {
